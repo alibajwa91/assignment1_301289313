@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BAJWA WEB SOLUTIONS- About</title>
+  <style>
+    body {
+      background-image: url("./img/background1.gif");
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: transparent;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .nav a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 15px;
+      border: 5px solid #000000;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #000000;
+    }
+    main {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .about-section {
+      flex: 1 1 60%;
+      margin-right: 20px;
+      padding: 20px;
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    .about-section h2 {
+      margin-top: 0;
+    }
+
+    .image-container {
+      float: left;
+      margin-right: 20px;
+    }
+
+    .image-container img {
+      width: 100px;
+      border-radius: 50%;
+    }
+
+    .image-text {
+      overflow: hidden;
+      color: #000000;
+    }
+
+    .image-text p {
+      margin: 0; /* Remove margin to prevent extra space */
+    }
+    
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      
+      <div class="nav">
+        <a href="/">Home</a>
+        <a href="about">About</a>
+        <a href="project">Projects</a>
+        <a href="services">Services</a>
+        <a href ="contact">Contact Me</a>
+      </nav>
+      </div>  
+    </header>
+    
+
+    <main>
+      <section class="about-section">
+       
+        <div class="image-text">
+          
+          <h2><center>ABOUT US!</center></h2><br><br>
+          
+          <p><b>
+            Bajwa Web Solutions is a leading web development company dedicated to providing
+             exceptional digital solutions to businesses worldwide. With a team of skilled professionals
+              and a passion for cutting-edge technology, we specialize in crafting robust websites, 
+            e-commerce platforms, web applications, and mobile apps that drive success in the online realm.  <br><br><br>
+
+            At Bajwa Web Solutions, we believe that every business has unique goals and requirements.
+             That's why we take a personalized approach to understand our clients' objectives, enabling
+              us to deliver tailored solutions that align with their vision and resonate with their target
+               audience. We combine creativity, technical expertise, and industry insights to build engaging
+                online experiences that captivate users and generate measurable results.<br><br><br>
+          
+        <h2>Welcome to Bajwa Web Solutions – where your vision meets digital excellence.</h2>
+       </p>
+      </section>
+    </main>
+    <p>Download my resume <a href="https://drive.google.com/file/d/18X0veGWis2NcfZ6T6J62FdFEq32zC_Z0/view?usp=drive_link">here</a></p>
+
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+</div>
+</body>
+</html>

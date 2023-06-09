@@ -1,0 +1,114 @@
+ 
+ <html lang="en">
+  <head>
+  <title>ALI MAQSOOD BAJWA</title>
+  <style>
+    body {
+      background-image: url("./img/background1.gif");
+      background-size: cover;
+      background-position: center;
+    }
+
+  .nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .nav a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 15px;
+      border: 5px solid #000000;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #000000;
+    }
+    .form-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+ </style>
+ </head>
+<body>
+  <div class="container">
+  <h1 class="heading"> <br><br>=>CONTACT US </h1>
+    
+
+    <div class="nav">
+      <a href="/">Home</a>
+      <a href="about">About</a>
+      <a href="project">Projects</a>
+      <a href="services">Services</a>
+      <a href ="contact">Contact Me</a>
+    </nav>
+   
+    </div>
+
+
+ <div class="imagenew"></div>
+    <div class="form-wrapper">
+      <div class="form">
+        <div class="div1">
+          <span class="contact">Fill the below form to join our team:</span>
+        </div>
+        <div class="div2">
+          <form class="forma" action="jaskular022@gmail.com">
+            <p>
+              <label for="txtFName">Name :</label>
+              <input id="txtFName" name="txtFName" size="90" type="text" required="required">
+            </p>
+          <p>
+              <label for="txtFName">Phone Number :</label>
+              <input id="txtFName" name="txtFName" size="75" type="number" required="required">
+            </p>
+            <p>
+                <label for="txtFName"> E-mail Adress:</label>
+                <input id="txtFName" name="txtFName" size="75"  type="text" required="required">
+              </p>
+              <p>
+                <label for="opted">Which language you Want to learn ?</label>
+                <input id="optEdSec" name="optEd" type="radio" value="Sec">Java/JavaScript
+                <input id="optEdSec" name="optEd" type="radio" value="Sec">C#/c/c++
+                <input id="optEdCol" name="optEd" tabindex="17" type="radio" value="Col">Python
+                <input name="optEd" tabindex="19" type="radio" value="Ugrad">HTML
+              </p>
+              <p>
+                <label for="opted">Whom you want contact </label>
+                <input id="optEdSec" name="optEd" type="radio" value="Sec">ALI MAQSOOD BAJWA- Founder
+                <input id="optEdSec" name="optEd" type="radio" value="Sec">JAKE-Lead Instructor
+                <input id="optEdCol" name="optEd" tabindex="17" type="radio" value="Col">JASMINE- Administrator
+                <input name="optEd" tabindex="19" type="radio" value="Ugrad">RAHUL - Technical Advisor
+              </p>
+              <p>
+                <label for="txtFName">How Did You Hear About Us :</label>
+                <input id="txtFName" name="txtFName" size="90" type="text" required="required">
+              </p>
+              <p>
+                <label for="txtFName">Inquiry Type :</label>
+                <input id="txtFName" name="txtFName" size="90" type="text" required="required">
+              </p>
+               </form>
+     </div>
+     
+    <div class="button">
+        <button id ="submitButton" class="buttonnew">Submit</button> &nbsp;&nbsp;
+        <button class="buttonnew">Reset</button>
+       </div>
+      </div>
+    </div>
+       <%- include('./partials/footer.ejs') %>
+    </div>
+  <script>
+  const submitButton = document.getElementById('submitButton');
+  submitButton.addEventListener('click', function(event){
+  event.preventDefault();
+  window.location.href = '/';
+  });
+  </script>
+</body>
+</html>

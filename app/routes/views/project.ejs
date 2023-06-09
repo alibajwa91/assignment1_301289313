@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BAJWA WEB SOLUTIONS- project</title>
+  <style>
+
+
+.nav {
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      left :900px;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .nav a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 15px;
+      border: 5px solid #000000;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #000000;
+    }
+    body {
+      background-image: url("./img/background1.gif");
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+       margin: 0;
+       padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.box {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+
+  border: 3px solid #000000;
+  margin-right: 70px;
+}
+.box h3, .box p, .box h1{
+      color: #000000;
+    }
+    .box img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #000000;
+    }
+
+</style>
+</head>
+<body>
+  <div class ="heading"> 
+    <h1> <center><u><b>Major projects </b></u></center></h1></div>
+    <div class="nav">
+        <a href = "/">Home </a>
+       <a href="about">About</a>
+        <a href="project">Projects</a>
+        <a href="services">Services</a>
+        <a href="contact">Contact me</a>
+    </div>
+         
+    <div class="container">
+        <div class="box">
+          <img class="logo" src="./images/e.jpg" alt="Logo"><br>
+          <h3>E-commerce Website:</h3>
+          <p>Bajwa Web Solutions collaborated with Singh Clothing, a renowned fashion retailer,
+             to develop a sophisticated e-commerce website. The primary objective was to create a seamless
+             online shopping experience for customers, showcase the latest fashion collections, and drive sales.</p>
+        </div>
+        <div class="box">
+            <img class="logo" src="./images/s.jpg" alt="Logo"><br>
+          <h3>Custom Web Application for Ahuja Logistics</h3>
+          <p>Bajwa Web Solutions collaborated with Ahuja Logistics, a reputable logistics company,
+             to develop a custom web application aimed at streamlining their supply chain operations.The objective was to create an efficient platform that
+             would centralize data, automate processes, and enhance overall operational efficiency..</p>
+        </div>
+        <div class="box">
+            <img class="logo" src="./images/t.jpg" alt="Logo"><br>
+          <h3>Mobile App for body Fitness</h3>
+          <p>Bajwa Web Solutions collaborated with Singh Fitness, a 
+            leading fitness center, to develop a mobile app aimed at enhancing the fitness journey
+            of its members. The goal was to provide an interactive platform that enabled 
+            members to track their progress, access workout routines, and engage with the fitness community.</p>
+          
+        </div>
+      </div>
+      <%- include('./partials/footer.ejs') %>
+      
+      </div>
+      
+</body>
+</html>

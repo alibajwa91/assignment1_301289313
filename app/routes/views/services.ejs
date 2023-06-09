@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bajwa Web Solutions - About </title>
+  <style>
+    .nav {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      color: #ffffff;
+      font-size: 18px;
+    }
+
+    .nav a {
+      display: inline-block;
+      margin-right: 10px;
+      padding: 10px 15px;
+      border: 5px solid #000000;
+      border-radius: 5px;
+      text-decoration: none;
+      color: #000000;
+    }
+    body {
+      background-image: url("./img/background1.gif");
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      margin-top: 100px;
+    }
+    hr {
+      border-top: 1px solid #000000;
+      margin: 0;
+    }
+    .section {
+      padding: 20px;
+      background-color: #000000;
+      border: 3px solid #ffffff;
+    }
+    .section h3, .section p {
+      color: #ffffff;
+    }
+    .section img {
+      max-width: 100%;
+      height: auto;
+    }
+    footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="/">Home</a>
+        <a href="about">About</a>
+        <a href="project">Projects</a>
+        <a href="services">Services</a>
+        <a href="contact">Contact me</a>
+    </div>
+    <div class ="heading"> 
+        <h1> <u><b>Services Provided</b></u></h1>
+    </div>
+    <div class="container">
+      <div class="section">
+        
+        <h3>Mobile App Development:</h3>
+        <p>Bajwa Web Solutions specializes in developing innovative and engaging mobile
+           applications for both iOS and Android platforms. Our skilled app developers work closely 
+           with clients to understand their specific requirements, ensuring that the final product 
+           aligns with their brand and delivers a seamless user experience. From concept and design to 
+          development and deployment, we guide our clients through every stage of the app development process.</p>
+      </div>
+      <hr>
+      <div class="section">
+        
+        <h3>UI/UX Design:</h3>
+        <p>At Bajwa Web Solutions, we understand the importance of user
+           experience and interface design in creating impactful digital solutions.
+            Our UI/UX design services focus on enhancing the usability, functionality, 
+            and visual appeal of websites, web applications, and mobile apps. Our team of talented designers utilizes industry
+           best practices and user-centered design principles to deliver intuitive and engaging user experiences.</p>
+      </div>
+      <hr>
+      <div class="section">
+        <h3>Web Development:</h3>
+        <p>Bajwa Web Solutions offers professional web development services tailored to 
+          meet the unique needs and goals of businesses. Our team of experienced developers creates visually appealing,
+           user-friendly, and fully functional websites using the latest technologies and frameworks. Whether it's a simple informational site or a complex e-commerce platform, 
+          we ensure that your website is optimized for performance, responsiveness, and search engine visibility.</p>
+      </div>
+      <%- include('./partials/footer.ejs') %>
+    </div>
+</body>
+</html>
